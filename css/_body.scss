@@ -1,0 +1,65 @@
+.body {
+	display: flex;
+	color: $very-dark-blue;
+	background: $light-grayish-blue;
+	padding: 40px 40px 60px 40px;
+
+	h1 {
+		font-size: 30px;
+	}
+
+	&__content {
+		margin: 30px 0;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		max-width: 520px;
+
+		span {
+			display: flex;
+			width: max-content;
+			align-items: flex-end;
+			color: $moderate-cyan;
+			border-bottom: 1px solid;
+			border-color: inherit;
+			padding-bottom: 5px;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.5;
+			}
+
+			&::after {
+				content: "";
+				margin-left: 5px;
+				width: 16px;
+				height: 16px;
+				background: url("../images/icon-arrow.svg");
+			}
+		}
+	}
+
+	img[src*="illustration-2"] {
+		width: 43vw;
+		transform: translateX(143px);
+	}
+}
+
+.testimonial-box {
+	background: #fff;
+	width: 367px;
+	padding: 20px 40px;
+	box-shadow: 0 0 6px 4px #00000008;
+
+	&__avatar {
+		display: flex;
+		align-items: center;
+		margin-top: 1.3em;
+
+		img {
+			width: 35px;
+			border-radius: 50%;
+			margin-right: 0.5em;
+		}
+	}
+}

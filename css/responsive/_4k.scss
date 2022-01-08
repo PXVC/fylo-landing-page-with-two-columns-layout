@@ -1,0 +1,178 @@
+@media screen and (min-width: 2560px) {
+	// Header
+	.header {
+		img[alt="Fylo"] {
+			width: 340px;
+			height: 100px;
+		}
+
+		&__nav {
+			column-gap: 62vw;
+
+			ul {
+				column-gap: 120px;
+
+				a {
+					font-size: 27px;
+				}
+			}
+		}
+	}
+
+	.intro {
+		margin: 100px 0 118px;
+		justify-content: space-around;
+	}
+
+	.info {
+		h1 {
+			font-size: 5.029em;
+			width: 1100px;
+		}
+
+		p {
+			font-size: 2em;
+			width: 950px;
+		}
+	}
+
+	.register {
+		width: max-content;
+	}
+
+	.email-input,
+	.btn-register {
+		height: 81px;
+		border-radius: 5px;
+		font-size: 2em;
+	}
+
+	.email-input {
+		width: 630px;
+	}
+
+	.btn-register {
+		width: 300px;
+	}
+
+	.bg-curve {
+		height: 125px;
+	}
+
+	// Section 1 - Body
+	.body {
+		padding: 90px 40px 200px 90px;
+
+		h1 {
+			font-size: 5.029em;
+		}
+
+		&__content {
+			margin: 50px 0;
+			max-width: 920px;
+			font-size: 32px;
+
+			p {
+				font-size: 0.8em;
+
+				& + span {
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+
+	.testimonial-box {
+		width: 667px;
+		height: 360px;
+		border-radius: 12px;
+
+		img {
+			width: 56px;
+		}
+
+		p,
+		h3 {
+			font-size: 2em;
+		}
+	}
+
+	// Section 2 - Early Access Section
+	.section-2 {
+		$self: &;
+		height: 400px;
+
+		&__content {
+			h1 {
+				font-size: 4em;
+				width: 600px;
+				margin-bottom: 33px;
+			}
+
+			p {
+				font-size: 2em;
+				width: 860px;
+			}
+		}
+
+		&__register-2 {
+			row-gap: 22px;
+
+			#{ $self }__btn-register {
+				width: 420px;
+			}
+
+			#{ $self }__email-input {
+				width: 900px;
+			}
+		}
+	}
+
+	// Footer
+	.footer {
+		$self: &;
+
+		img {
+			width: 280px;
+		}
+
+		&__info {
+			line-height: 60px;
+			justify-content: space-evenly;
+			margin-left: -160px;
+
+			#{ $self }__contact {
+				p {
+					font-size: 2em;
+
+					&:first-child::before,
+					&:last-child::before {
+						transform: scale(1.8);
+						left: 50px;
+						margin-top: 21px;
+					}
+				}
+			}
+
+			#{ $self }__list {
+				column-gap: 500px;
+
+				#{ $self }__list-1,
+				#{ $self }__list-2 {
+					span {
+						font-size: 2em;
+					}
+				}
+			}
+		}
+	}
+
+	.sci {
+		i {
+			width: 76px;
+			height: 76px;
+			margin-right: 30px;
+			font-size: 34px;
+		}
+	}
+}

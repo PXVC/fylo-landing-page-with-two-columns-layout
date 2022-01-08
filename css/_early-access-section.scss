@@ -1,0 +1,48 @@
+// Colors
+// Primary
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+
+// Accent
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+
+// Neutral
+// WARNING: change the "light-grayish-blue" color to rgb or hsl will be not have perfect look
+$light-grayish-blue: rgb(248, 248, 254);
+$light-gray: hsl(0, 0%, 75%);
+
+.section-2 {
+	$self: &;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: $desaturated-blue;
+	color: $light-grayish-blue;
+	padding: 0 15px 0 64px;
+	height: 230px;
+
+	&__content {
+		width: 429px;
+
+		h1 {
+			font-size: 30px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__register-2 {
+		padding: 40px;
+		flex-direction: column-reverse;
+
+		#{ $self }__btn-register {
+			margin: 0;
+			margin-top: 10px;
+			width: 230px;
+		}
+
+		#{ $self }__email-input {
+			width: 480px;
+		}
+	}
+}

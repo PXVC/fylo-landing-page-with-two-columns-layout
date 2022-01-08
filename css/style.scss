@@ -1,0 +1,49 @@
+// NOTE: Colors
+// Primary
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+
+// Accent
+$bright-blue: hsl(224, 93%, 58%);
+$moderate-cyan: hsl(170, 45%, 43%);
+
+// Neutral
+$light-grayish-blue: rgb(
+	248,
+	248,
+	254
+); // WARNING: change that color to rgb or hsl will be not have perfect look
+$light-gray: hsl(0, 0%, 75%);
+
+// NOTE: Basic Setups
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img[src$="svg"] {
+	user-select: none;
+}
+
+input[type="email"] {
+	outline: none;
+}
+
+// NOTE: Import Sections
+@import "header";
+@import "body";
+@import "early-access-section";
+@import "footer";
+
+@import "responsive/4k";

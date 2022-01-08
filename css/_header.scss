@@ -1,0 +1,103 @@
+.header {
+	padding: 40px;
+	padding-bottom: 0;
+
+	/* Navigation */
+	&__nav {
+		display: flex;
+		align-items: center;
+		column-gap: 836px;
+
+		ul {
+			display: flex;
+			align-items: center;
+			column-gap: 50px;
+			text-transform: capitalize;
+
+			a {
+				color: $very-dark-blue;
+				font-family: "Raleway", sans-serif;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+.intro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 37px 0 88px;
+
+	h1 {
+		font-weight: 700;
+		font-size: 2.629em;
+		font-family: "Raleway", sans-serif;
+	}
+
+	p {
+		width: 474px;
+	}
+
+	img {
+		width: 40vw;
+	}
+}
+
+.info {
+	max-width: 540px;
+	row-gap: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.register {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+}
+
+.email-input {
+	border: 1px solid $very-dark-blue;
+	width: 282px;
+	height: 40px;
+	padding-left: 15px;
+	border-radius: 3px;
+	box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.15);
+
+	&:focus {
+		border-width: 1px;
+	}
+}
+
+.btn-register {
+	@extend .email-input;
+	border: none;
+	padding: 0;
+	margin-left: 20px;
+	width: 175px;
+	color: $light-grayish-blue;
+	background: $bright-blue;
+	cursor: pointer;
+
+	&:hover {
+		background: hsla(224, 93%, 58%, 0.7);
+	}
+
+	&:focus + :invalid {
+		border-color: hsl(4, 88%, 66%);
+	}
+
+	&:focus + :valid {
+		border-color: $bright-blue;
+	}
+}
+
+.bg-curve {
+	background: url("../images/bg-curve-desktop.svg");
+	height: 100px;
+	width: 106.3%;
+	margin-left: -40px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

@@ -1,0 +1,95 @@
+.footer {
+	$self: &;
+	background: $very-dark-blue;
+	color: #fff;
+	padding: 70px 50px;
+
+	img {
+		filter: brightness(0) invert(1);
+		margin-bottom: 10px;
+	}
+
+	&__info {
+		display: flex;
+		column-gap: 250px;
+		line-height: 34px;
+
+		#{ $self }__contact {
+			& :first-child,
+			& :last-child {
+				&::before {
+					content: "";
+					position: absolute;
+					left: 10px;
+					margin-top: 7px;
+				}
+			}
+
+			& :first-child {
+				&::before {
+					width: 18px;
+					height: 18px;
+					background-image: url("../images/icon-phone.svg");
+				}
+			}
+
+			& :last-child {
+				&::before {
+					width: 20px;
+					height: 16px;
+					background-image: url("../images/icon-email.svg");
+				}
+			}
+		}
+
+		#{ $self }__list {
+			@extend #{ $self }__info;
+
+			span {
+				cursor: pointer;
+				font-weight: 400;
+				text-transform: capitalize;
+
+				&:hover {
+					color: $bright-blue;
+				}
+			}
+		}
+	}
+}
+
+.sci {
+	display: flex;
+	flex-direction: row;
+
+	i {
+		$size: 36px;
+		margin-right: 10px;
+		padding: 7px;
+		border: 1.999px solid #fff;
+		border-radius: 50%;
+		width: $size;
+		height: $size;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		&:hover {
+			color: $bright-blue;
+			border-color: $bright-blue;
+		}
+	}
+}
+
+.attribution {
+	a {
+		text-decoration: underline;
+		color: #fff;
+
+		&:hover {
+			text-decoration: none;
+			color: $bright-blue;
+		}
+	}
+}
